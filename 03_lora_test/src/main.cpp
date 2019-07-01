@@ -24,8 +24,6 @@ void setup()
 
 void loop()
 {
-Serial.println(at.getVoltage());
-
    if (at.checkAction())
   {
     uint8_t Data_Length = 0x02;
