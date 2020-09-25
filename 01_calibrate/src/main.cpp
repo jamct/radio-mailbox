@@ -36,7 +36,7 @@ void loop()
 bool checkLetter(){
   digitalWrite(irled,HIGH);
   digitalWrite(irdiode,HIGH);
-  unsigned int measure;
+  unsigned int measure=0;
   for(int i = 0 ; i <3 ; i++){
     delay(5);
     measure += analogRead(irsens);
